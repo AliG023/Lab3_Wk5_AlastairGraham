@@ -10,7 +10,7 @@ public class SavingsAccount_AG extends BankAccount_AG {
 	@Override
 	public void withdraw(double amount) {
 		if (balance - amount < 50) {
-			System.out.println("This Amount Would Take You Overdrawn. Your Balance Is: " + balance);
+			System.out.println("This Amount Would Take You Below $50. Your Balance Is: " + balance);
 		} else {
 			super.withdraw(amount);
 		}
